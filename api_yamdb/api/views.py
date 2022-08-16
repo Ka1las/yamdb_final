@@ -9,34 +9,20 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, mixins, status, views, viewsets
 from rest_framework.decorators import action
 from rest_framework.pagination import PageNumberPagination
-from rest_framework.permissions import (
-    AllowAny,
-    IsAuthenticated,
-    IsAuthenticatedOrReadOnly
-)
+from rest_framework.permissions import (AllowAny, IsAuthenticated,
+                                        IsAuthenticatedOrReadOnly)
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Category, Genre, Review, Title
 
 from .filters import TitleFilter
-from .permissions import (
-    AdminOrReadOnly,
-    AuthorAdminModeratorPermission,
-    IsAdmin,
-    IsSuperuser
-)
-from .serializers import (
-    CategorySerializer,
-    CommentSerializer,
-    GenreSerializer,
-    ReviewSerializer,
-    TitleCreateAndUpdate,
-    TitleGet,
-    TokenSerializer,
-    UserSerializer,
-    UserMeSerializer,
-    UserSignUpSerializer
-)
+from .permissions import (AdminOrReadOnly, AuthorAdminModeratorPermission,
+                          IsAdmin, IsSuperuser)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          TitleCreateAndUpdate, TitleGet, TokenSerializer,
+                          UserMeSerializer, UserSerializer,
+                          UserSignUpSerializer)
 
 User = get_user_model()
 
