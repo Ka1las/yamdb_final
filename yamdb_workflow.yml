@@ -22,8 +22,6 @@ jobs:
     - name: Test with flake8 and django tests
       run: |
         python -m flake8
-        cd yamdb_final/api_yamdb/
-        python manage.py test
         pytest
 
   build_and_push_to_docker_hub:
@@ -43,12 +41,14 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
+          context: ./api_yamdb
           push: true
           tags: insept17/yamdb_final:latest
 
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
+    if: github.ref == 'refs/heads/master'
     steps:
     - name: executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
