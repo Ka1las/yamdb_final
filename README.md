@@ -1,4 +1,4 @@
-(https://github.com/Ka1las/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+https://github.com/Ka1las/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
 
 # Yamdb_final
 ## Описание проекта
@@ -68,7 +68,7 @@ sudo docker-compose exec web python manage.py createsuperuser
 - Собираем статику:
 
 ```
-docker-compose exec web python manage.py collectstatic --no-input 
+sudo docker-compose exec web python manage.py collectstatic --no-input 
 ```
 
 ### Примеры запросов к API:
