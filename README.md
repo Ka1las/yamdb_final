@@ -1,4 +1,4 @@
-https://github.com/Ka1las/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+(https://github.com/Ka1las/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # Yamdb_final
 ## Описание проекта
