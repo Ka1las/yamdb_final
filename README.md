@@ -1,4 +1,4 @@
-![example workflow](https://github.com/Ka1las/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/Ka1las/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg) адрес http://51.250.108.190/api/v1/
 
 # Yamdb_final
 ## Описание проекта
